@@ -143,14 +143,15 @@ This interim report documents the development, improvement, and preliminary eval
 - [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
 
 ---
-# List of Figures
-Figure 1. Value Proposition
+## List of Figures
 
----
+- [Figure 1. Initial tray concept using suspended silicone strips](#figure-1)
+- [Figure 2. Initial tray concept using a perforated frame and adjustable silicone strings](#figure-2)
+- [Figure 3. Initial elevated open-bottom tray concept](#figure-3)
 
-# List of Tables 
-Table 1. Value Proposition
-Table 2. Acceptance Criteria
+
+## List of Tables
+XX
 
 ---
 
@@ -179,7 +180,7 @@ The inspection of ophthalmic surgical instruments at the Singapore National Eye 
 
 e
 
-## 1.3 Problem Objectives, Scope, and Value
+## 1.3 Project Objectives, Scope, and Value
 
 This project aims to create a tray-compatible automated inspection aid combining opposing-view imaging with a computer-vision pipeline. Initial algorithmic evaluation focused on the Hook Sinskey (HS) with the chance of future extension including Chop Phaco and Macpherson, and Utrata forceps. The envisioned system counts or localises instruments, evaluates visible damage and flags abnormal or uncertain outcomes for nurse review. It is not intended to replace clinical judgement or independently approve instruments for reuse. The anticipated contribution lies in joining a practical optical-mechanical fixture to defect-focused image analysis rather than improving a model score in isolation.
 
@@ -194,7 +195,7 @@ This project aims to create a tray-compatible automated inspection aid combining
 
 <p align="center"><em>Table 1. Value Proposition</em></p>
 ---
-# 2 System Requirements and Design Specifications
+
 
 ## 2.1 Proposed System Overview
 
@@ -227,3 +228,33 @@ The resulting design specifications are presented in Table 2, together with thei
 | **Optical resolution** | Smallest relevant defect must be distinguishable | Ensure sufficient image detail for detecting fine instrument damage. | Calibrate field of view and measure image sampling. |
 
 <p align="center"><em>Table 2. Acceptance Criteria</em></p>
+
+---
+
+# 3 System Design and Prototype Development
+
+## 3.1 Mechanical Design Development
+
+### 3.1.1 Initial Concepts and Evaluation
+
+Three initial tray-support concepts were explored to improve visibility of the underside of ophthalmic surgical instruments while maintaining secure instrument placement. The first concept (Figure 1) used suspended silicone strips to support the instruments while leaving spaces for imaging from below. The second concept (Figure 2) introduced a perforated frame with adjustable silicone strings, allowing greater flexibility in positioning the supports. However, both concepts would still require nurses to flip the tray to inspect the opposite surface, limiting their potential to reduce manual handling.
+
+To address this limitation, the third concept (Figure 3) introduced an elevated, open-bottom tray supported by legs. Unlike the first two designs, this arrangement would allow a camera to be positioned underneath the instruments without flipping the tray. Nevertheless, the open support structures raised concerns about instrument stability, ease of placement and the possibility of additional instrument damage. These considerations subsequently guided the selection of a transparent-base tray, which aims to provide underside visibility while retaining a continuous support surface.
+
+<p align="center" id="figure-1">
+  <img src="assets/concept-1.jpeg" width="500" alt="Concept 1">
+  <br>
+  <em>Figure 1. Initial tray concept using suspended silicone strips.</em>
+</p>
+
+<p align="center" id="figure-2">
+  <img src="assets/concept-2.jpeg" width="500" alt="Concept 2">
+  <br>
+  <em>Figure 2. Initial tray concept using a perforated frame and adjustable silicone strings.</em>
+</p>
+
+<p align="center" id="figure-3">
+  <img src="assets/concept-3.jpeg" width="500" alt="Concept 3">
+  <br>
+  <em>Figure 3. Initial elevated open-bottom tray/chair concept.</em>
+</p>
