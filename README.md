@@ -158,3 +158,6 @@ Table 1. xx []
 | DETR | Detection Transformer |
 | YOLO | You-Only-Look-Once |
 | M6 | Metric fastener with nominal 6 mm thread diameter |
+
+---
+RECHECKKKKKKKK
