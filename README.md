@@ -17,20 +17,28 @@
 
 <br>
 
+<div align="center">
+
 <table>
-<tr>
-<th>Student Name</th>
-<th>Student No.</th>
-</tr>
-<tr>
-<td>Wongmuang Napatsawan</td>
-<td>A0287748E</td>
-</tr>
-<tr>
-<td>Christoph Franz Cuan</td>
-<td>A0288302E</td>
-</tr>
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Student No.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wongmuang Napatsawan</td>
+      <td>A0287748E</td>
+    </tr>
+    <tr>
+      <td>Christoph Franz Cuan</td>
+      <td>A0288302E</td>
+    </tr>
+  </tbody>
 </table>
+
+</div>
 
 <p><b>Supervisor:</b> Mr. Nicholas Chew</p>
 
