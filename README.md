@@ -72,7 +72,8 @@ We would like to express our sincere gratitude to our supervisor, Mr. Nicholas C
 ---
 
 # Abstract
-XX
+This interim report documents the development, improvement, and preliminary evaluation of an automated ophthalmic surgical-instrument inspection system developed with the Singapore National Eye Centre (SNEC). Building upon the inherited MEDetect project from the previous cohort with the two linked challenges in mind: acquiring more than one side of the tool images (2D) within a practical physical setup, and improving defect detection accuracy. Semester 1 development included alternative initial concepts of mechanical parts, a final prototype of a transparent-base tray and trolley design, and the training and development of defect detection using Mask R-CNN. The proposed operational camera is the Keyence VS-L160CX, while the machine learning development uses photographs from a handphone camera (iPhone 15). Comparative calculations examine the consequences of camera resolution and field of view for fine instrument tips will be demonstrated alongside an idealised cantilever analysis that estimates camera-arm deformation under assumed loading and stiffness. For the initial Hook Sinskey pilot happened in Semester 1, 226 original images were used for training, validation and test sets. Mask R-CNN among YOLO and DETRs achieved a reported 100% classification accuracy on 20 usable test crops while a full-pipeline accuracy fell to 83.3% across 24 test images, and its wet-condition accuracy was 66.7%. The results indicate promising crop-level defect classification but highlight unresolved limitations in localisation, wet-image robustness and transfer from smartphone to industrial-camera imaging. Semester 2 work will focus on Keyence-native training data, full integration of mechanical and machine learning systems, and the development of user interface for the seamless workflow in a real hospital setting. 
+ 
 
 ---
 
