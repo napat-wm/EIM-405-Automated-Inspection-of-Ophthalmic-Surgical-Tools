@@ -273,3 +273,17 @@ The final component fit, surface quality and any optical distortion caused by th
   <br>
   <em>Figure 4. CAD rendering of the proposed surgical instrument tray with a transparent acrylic base and 3D-printed surrounding walls.</em>
 </p>
+
+#### 3.1.2.2 Three-Tier Trolley Design and Camera Arm
+
+The trolley consists of 3030 T-slot aluminum extrusions arranged across three tiers, as illustrated in Figure 5. The upper tier accommodates the transparent tray and imaging area, while the second and third tiers provide less noisy background in images and a space for power unit storage, respectively.
+
+Two cameras are proposed, with one positioned above the tray and the other underneath the transparent base and facing up. This opposing arrangement aims to capture both sides of the instruments without requiring manual flipping.
+
+Photographs of the fabricated trolley and the bill of materials used for fabrication at the NUS Central Workshop are provided in [Appendix C](#appendix-c-trolley-fabrication-and-bill-of-materials).
+
+<p align="center" id="figure-5">
+  <img src="assets/final-trolley.jpeg" width="400" alt="CAD rendering of the three-tier trolley with opposing camera mounts">
+  <br>
+  <em>Figure 5. Final Trolley Assembly.</em>
+</p>
