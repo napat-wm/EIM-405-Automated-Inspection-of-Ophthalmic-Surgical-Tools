@@ -422,8 +422,48 @@ To improve generalisation without contaminating the evaluation data, augmentatio
   <em>Figure 9. Representative image augmentation techniques applied to the training dataset.</em>
 </p>
 
+### 3.3.3 Prototype Testing and Performance Evaluation
 
-  
+**Testing Objective and Evaluation Design:** The purpose of testing was to determine whether the prototypes could improve the safety-critical defect-screening performance of the inherited YOLO approach. Accuracy and inference-time statistics were also reported. Median latency represents typical processing time, while p95 latency represents near-worst-case processing time.
+
+Testing was conducted at two levels:
+
+1. **Defect-model testing on reviewed tip crops**, which isolated defect-classification performance from tray-level localisation errors.
+2. **End-to-end pipeline testing**, which included initial YOLO tool detection from the tray, crop generation and final defect classification.
+
+**Defect-Model Testing on Reviewed Tip Crops:** Twenty-four test images were used. However, the initial YOLO tray detector did not produce usable tool crops for four images. The defect models therefore received 20 delivered Hook Sinskey tip crops, and their performance on these crops is summarised below.
+
+| **Model** | **Accuracy** | **FNR** | **Median inference time** |
+|:---|---:|---:|---:|
+| YOLO | 85.0% | 12.5% | 44.6 ms |
+| DETR detection | 70.0% | 31.2% | 83.1 ms |
+| DETR segmentation | 80.0% | 6.2% | 208.4 ms |
+| **Mask R-CNN** | **100%** | **0%** | **221.2 ms** |
+
+**End-to-End Pipeline Testing:** This test evaluated the deployed workflow (i.e. full-tray image → initial YOLO tool detection → tool crop generation → defect-model prediction).
+
+Strict accuracy was calculated against all 24 full-tray test images. A missed crop or incorrect final classification was counted as incorrect. Results for this test are summarised below.
+
+| **Model** | **Strict accuracy** | **FNR** |
+|:---|---:|---:|
+| YOLO | 70.8% | 12.5% |
+| DETR detection | 58.3% | 31.2% |
+| DETR segmentation | 66.7% | 6.2% |
+| **Mask R-CNN** | **83.3%** | **0%** |
+
+**Robustness Test (Dry versus Wet Conditions):** To simulate post-operative conditions, the tray and tools were misted with water before wet-condition image capture. Model performance under these wet-tool conditions is summarised below.
+
+| **Model** | **Dry accuracy** | **FNR** | **Wet accuracy** |
+|:---|---:|---:|---:|
+| YOLO | 83.3% | 12.5% | 58.3% |
+| DETR detection | 66.7% | 37.5% | 50.0% |
+| DETR segmentation | 75.0% | 0% | 58.3% |
+| **Mask R-CNN** | **100.0%** | **0%** | **66.7%** |
+
+### 3.3.4 Prototype Selection and Analysis
+
+As it was the best contender among the prototype models, Mask R-CNN was selected as the tool-specific defect model we would proceed with. On base case defect performance, Mask R-CNN, our best contender, achieves 0% FNR under our test scenarios and median inference time of 221.2 ms, comfortably achieving our design specifications. Its instance-segmentation output also provides more interpretable visual information for nurse review. It only struggles on accuracy on end-to-end pipeline which could be improved with greater training volume. With these preliminary results, we are confident in the ability of the project to meet performance standards and believe it is worthwhile pursuing for the other tools.
+
 ---
 
 # 4 Discussion, Limitations and Semester 2 Plan
@@ -442,6 +482,33 @@ Semester 2 will focus on integrating the mechanical and imaging components into 
 
 User-interface development will proceed alongside detection system refinement before the components are integrated for end-to-end testing. Final verification will assess the system against the proposed design specifications, including defect detection, instrument counting and inspection time. The proposed development timeline is presented in [Appendix D](#appendix-d-semester-2-development-gantt-chart).
 
+**Machine-Learning Limitations and Proposed Solutions**
+
+**1. Domain Shift Between Smartphone Images and Intended KEYENCE Setup**
+
+The current prototypes were trained and evaluated using smartphone images. However, the intended operational system will use the KEYENCE camera, which differs in resolution, focal length, illumination, colour response, glare and camera angle. Consequently, model performance may change when deployed in the completed physical setup.
+
+**Proposed Solutions:**
+- Retake the dataset using the actual KEYENCE camera and completed inspection setup.
+- Retrain or fine-tune Mask R-CNN using images acquired from the KEYENCE camera.
+
+**2. Wet Conditions Reduce Accuracy**
+
+Although Mask R-CNN retained 100% defective recall under the tested wet conditions, its accuracy decreased from 100% under dry conditions to 66.7% under wet conditions. This suggests that healthy tools may be incorrectly classified as defective due to moisture and reflections.
+
+**Proposed Solutions:**
+- Expand the wet-condition training dataset to include both healthy and defective instruments.
+- Introduce variations in water droplets, reflections, drying conditions and illumination.
+- Evaluate precision and false-positive rates for healthy instruments under wet conditions.
+- Adjust the classification decision threshold while maintaining high defective recall.
+
+**3. Limited Tool Scope**
+
+The current prototype development focused exclusively on Hook Sinskey instruments. Therefore, the results cannot be assumed to generalise to the remaining target instruments, including Chop Phaco, Forceps Macpherson and Forceps Utrata.
+
+**Proposed Solutions:**
+- Extend dataset collection and model development sequentially to the remaining target instruments.
+- Apply the same controlled workflow for baseline image collection, annotation, training, reviewed-crop testing, end-to-end evaluation and wet-condition robustness testing.
 ---
 
 ---
