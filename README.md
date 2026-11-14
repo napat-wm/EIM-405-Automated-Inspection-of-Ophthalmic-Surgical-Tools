@@ -525,10 +525,81 @@ The current prototype development focused exclusively on Hook Sinskey instrument
 
 ---
 
----
 
 # 5 Conclusion
 
 The Semester 1 development established a foundation for an automated ophthalmic surgical-instrument inspection system through both **mechanical design and machine-learning development**. By evaluating alternative tray concepts, the team developed a transparent-base tray and three-tier trolley configuration intended to support two-sided inspection with minimal instrument handling. Preliminary engineering calculations also provided further considerations for camera positioning and imaging requirements, and comparative ML testing identified Mask R-CNN as the preferred model for the initial Hook Sinskey application.
 
 Together, these developments demonstrate progress towards integrating image acquisition with the physical setup and automated defect assessment into a single inspection workflow, providing a basis for continued system development in Semester 2.
+
+---
+
+# References
+
+[1] Abràmoff, M. D., Lavin, P. T., Birch, M., Shah, N., & Folk, J. C. *Pivotal Trial of an Autonomous AI-Based Diagnostic System for Detection of Diabetic Retinopathy in Primary Care Offices*. npj Digital Medicine, 1, Article 39. [Available online](https://doi.org/10.1038/s41746-018-0040-6).
+
+[2] Carion, N., et al. *End-to-End Object Detection with Transformers*. European Conference on Computer Vision (ECCV). [Available online](https://doi.org/10.1007/978-3-030-58452-8_13).
+
+[3] Dadoun, H., et al. *Deep Learning for the Detection, Localization, and Characterization of Focal Liver Lesions on Abdominal US Images*. Radiology: Artificial Intelligence, 4(3), e210110. [Available online](https://doi.org/10.1148/ryai.210110).
+
+[4] He, K., Gkioxari, G., Dollár, P., & Girshick, R. *Mask R-CNN*. IEEE International Conference on Computer Vision (ICCV), pp. 2961–2969. [Available online](https://doi.org/10.1109/ICCV.2017.322).
+
+[5] KEYENCE Corporation. *VS-L160CX: Zoom Smart Camera, Standard Range, Colour, 1.6M Pixel*. [Available online](https://www.keyence.com.sg/products/vision/vision-sys/vs/models/vs-l160cx/).
+
+[6] Singapore National Eye Centre (SNEC). *What We Do – Cataract & Comprehensive Ophthalmology*. [Available online](https://www.snec.com.sg/our-specialties/clinical-interests/cataract-comprehensive/what-we-do).
+
+[7] Wang, T., et al. *Quantitative Analysis of Functional Filtering Bleb Size Using Mask R-CNN*. Annals of Translational Medicine, 8(11), 709. [Available online](https://doi.org/10.21037/atm.2020.03.135).
+
+---
+
+# Appendices
+
+
+## Appendix A: Existing Surgical Tray
+
+<p align="center">
+  <img src="assets/A1.png" width="750"><br><br>
+  <img src="assets/A2.png" width="750">
+</p>
+
+---
+
+## Appendix B: Final Tray Design
+
+### Interactive Fusion 360 Models
+
+**[View Interactive 3D Model 1](https://a360.co/48j4QRC)**
+
+**[View Interactive 3D Model 2](https://a360.co/4iHRODl)**
+
+### Fabricated Tray Photographs
+
+<p align="center">
+  <img src="assets/B1.png" width="700"><br><br>
+  <img src="assets/B2.png" width="700">
+</p>
+
+---
+
+## Appendix C: Trolley Prototyping
+
+<p align="center">
+  <img src="assets/C1.png" width="750"><br><br>
+  <img src="assets/C2.png" width="750">
+</p>
+
+---
+
+## Appendix D: Semester 2 Development Gantt Chart
+
+<p align="center">
+  <img src="assets/D1.png" width="850">
+</p>
+
+---
+
+## Appendix E: ML Workspace and Documented Progress
+
+The machine-learning development files and documented progress are available in the project repository.
+
+**[Open ML Workspace](https://github.com/napat-wm/EIM-405-Automated-Inspection-of-Ophthalmic-Surgical-Tools/tree/main/ML)**
