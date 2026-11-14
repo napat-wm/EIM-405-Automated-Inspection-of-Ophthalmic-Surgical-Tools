@@ -145,3 +145,16 @@ Table 1. xx []
 
 ---
 
+# Acronyms
+
+| Acronym | Definition |
+|:--------|:-----------|
+| SNEC | Singapore National Eye Centre |
+| HS | Hook Sinskey |
+| CP | Chop Phaco |
+| FM | Forceps Macpherson |
+| FU | Forceps Utrata |
+| FNR | False-negative Rate |
+| DETR | Detection Transformer |
+| YOLO | You-Only-Look-Once |
+| M6 | Metric fastener with nominal 6 mm thread diameter |
