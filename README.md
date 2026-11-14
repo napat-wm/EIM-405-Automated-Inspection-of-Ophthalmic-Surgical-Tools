@@ -135,5 +135,13 @@ This interim report documents the development, improvement, and preliminary eval
 - [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
 
 ---
+# List of Figures
+Figure 1. xx []
 
+---
+
+# List of Tables 
+Table 1. xx []
+
+---
 
