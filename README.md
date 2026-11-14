@@ -353,3 +353,17 @@ Assuming both cameras capture the full 277 mm tray width, the KEYENCE provides a
 |:---|---:|---:|---:|
 | KEYENCE VS-L160CX (1.6 MP) | 1,440 | 277 mm | 0.1924 mm/pixel |
 | iPhone 15 (illustrative 48 MP mode) | 8,064 | 277 mm | 0.03435 mm/pixel |
+
+## 3.3 Machine-Learning Prototype Development
+
+---
+
+# 4 Discussion, Limitations and Semester 2 Plan
+
+## 4.1 Interpretation and Limitations
+
+The Semester 1 work established a proposed mechanical setup and evaluated preliminary defect-detection models.
+
+The transparent-base tray and opposing-camera arrangement were developed to improve visibility of both instrument surfaces while reducing manual handling for flipping. However, although the tray and trolley components have been fabricated, the complete system has not yet been tested with the KEYENCE camera(s). Therefore, the suitability of the acrylic sheets for imaging, the stability of the camera supports and the repeatability of image acquisition remain unverified. The preliminary optical and structural calculations provide initial estimates but rely on assumed imaging conditions and mechanical properties.
+
+Furthermore, the ML models were trained and evaluated using iPhone 15 images, meaning their performance may change when images are acquired using the intended KEYENCE camera. Although Mask R-CNN demonstrated promising defect-classification results, its performance remains dependent on successful tool localisation and was weaker under wet conditions. These limitations highlight the need for integrated hardware testing, optical calibration and further model validation in Semester 2.
