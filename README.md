@@ -139,8 +139,8 @@ This interim report documents the development, improvement, and preliminary eval
 - [References](#references)
 - [Appendix A: Existing Surgical Tray](#appendix-a-existing-surgical-tray)
 - [Appendix B: Final Tray Design](#appendix-b-final-tray-design)
-- [Appendix C: Bill of Material from NUS Central Workshop](#appendix-c-bill-of-material-from-nus-central-workshop)
-- [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
+- [Appendix C: Trolley Prototyping](#appendix-c-trolley-prototyping)
+- [Appendix D: Semester 2 Development Gantt Chart](#appendix-d-semester-2-development-gantt-chart)
 
 ---
 ## List of Figures
@@ -281,7 +281,7 @@ The trolley consists of 3030 T-slot aluminum extrusions arranged across three ti
 
 Two cameras are proposed, with one positioned above the tray and the other underneath the transparent base and facing up. This opposing arrangement aims to capture both sides of the instruments without requiring manual flipping.
 
-Photographs of the fabricated trolley and the bill of materials used for fabrication at the NUS Central Workshop are provided in [Appendix C](#appendix-c-trolley-fabrication-and-bill-of-materials).
+Photographs of the fabricated trolley and the bill of materials used for fabrication at the NUS Central Workshop are provided in [Appendix C](#appendix-c-trolley-prototyping).
 
 <p align="center" id="figure-5">
   <img src="assets/final-trolley.jpg" width="400" alt="CAD rendering of the three-tier trolley with opposing camera mounts">
@@ -367,3 +367,9 @@ The Semester 1 work established a proposed mechanical setup and evaluated prelim
 The transparent-base tray and opposing-camera arrangement were developed to improve visibility of both instrument surfaces while reducing manual handling for flipping. However, although the tray and trolley components have been fabricated, the complete system has not yet been tested with the KEYENCE camera(s). Therefore, the suitability of the acrylic sheets for imaging, the stability of the camera supports and the repeatability of image acquisition remain unverified. The preliminary optical and structural calculations provide initial estimates but rely on assumed imaging conditions and mechanical properties.
 
 Furthermore, the ML models were trained and evaluated using iPhone 15 images, meaning their performance may change when images are acquired using the intended KEYENCE camera. Although Mask R-CNN demonstrated promising defect-classification results, its performance remains dependent on successful tool localisation and was weaker under wet conditions. These limitations highlight the need for integrated hardware testing, optical calibration and further model validation in Semester 2.
+
+## 4.2 Development and Verification Plan
+
+Semester 2 will focus on integrating the mechanical and imaging components into a functional inspection system. The KEYENCE cameras will first be installed on the fabricated trolley, followed by mechanical stability testing and optical verification through the acrylic tray. Once consistent imaging conditions have been established, additional Hook Sinskey images will be collected to support model retraining and validation.
+
+User-interface development will proceed alongside detection system refinement before the components are integrated for end-to-end testing. Final verification will assess the system against the proposed design specifications, including defect detection, instrument counting and inspection time. The proposed development timeline is presented in [Appendix D](#appendix-d-semester-2-development-gantt-chart).
