@@ -116,12 +116,12 @@ XX
   - [3.3.3 Prototype Testing and Performance Evaluation](#333-prototype-testing-and-performance-evaluation)
   - [3.3.4 Prototype Selection and Analysis](#334-prototype-selection-and-analysis)
 
-**5. Discussion, Limitations and Semester 2 Plan**
+**4. Discussion, Limitations and Semester 2 Plan**
 
-- [5.1 Interpretation and Limitations](#51-interpretation-and-limitations)
-- [5.2 Prioritised Semester 2 Milestones](#52-prioritised-semester-2-milestones)
+- [4.1 Interpretation and Limitations](#51-interpretation-and-limitations)
+- [4.2 Prioritised Semester 2 Milestones](#52-prioritised-semester-2-milestones)
 
-**6. Conclusion**
+**5. Conclusion**
 
 - [Conclusion](#6-conclusion)
 
