@@ -137,19 +137,20 @@ This interim report documents the development, improvement, and preliminary eval
 **References and Appendices**
 
 - [References](#references)
-- [Appendix A: Mechanical Design Drawings](#appendix-a-mechanical-design-drawings)
+- [Appendix A: Existing Surgical Tray](#appendix-a-existing-surgical-tray)
 - [Appendix B: Interactive CAD Models](#appendix-b-interactive-cad-models)
 - [Appendix C: Bill of Material from NUS Central Workshop](#appendix-c-bill-of-material-from-nus-central-workshop)
 - [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
 
 ---
 # List of Figures
-Figure 1. xx []
+Figure 1. Value Proposition
 
 ---
 
 # List of Tables 
-Table 1. xx []
+Table 1. Value Proposition
+Table 2. Acceptance Criteria
 
 ---
 
@@ -192,5 +193,37 @@ This project aims to create a tray-compatible automated inspection aid combining
 | **Robustness under realistic inspection conditions** | Since ophthalmic instruments may be wet, reflective or positioned differently during inspection, these conditions are prioritised in prototype evaluation to assess the system's suitability for clinical use. |
 
 <p align="center"><em>Table 1. Value Proposition</em></p>
+---
+# 2 System Requirements and Design Specifications
 
+## 2.1 Proposed System Overview
 
+The proposed workflow is: **tray positioning → image capture → tool localisation/counting → cropped detail analysis → reviewed result.**
+
+The proposed system was developed to address two limitations of the inherited MEDetect project: the inability to inspect both sides of surgical instruments without manual repositioning and inconsistent defect detection. To address these challenges, the team proposed a transparent-base tray with cameras positioned above and below the instruments. This arrangement aims to improve surface visibility while minimising additional handling by nurses. The inspection process also retains two stages: instrument localisation and counting, followed by detailed defect assessment. This approach was selected because identifying entire instruments and examining fine defects require different levels of image detail.
+
+## 2.2 Hardware Design Requirements
+
+Hardware requirements were established by considering clinical workflow compatibility and imaging consistency. The team prioritised maintaining dimensions similar to the existing SNEC surgical tray to minimise changes to instrument handling and placement. The tray specifications and photographs of the existing tray are provided in Appendix A for reference.
+
+A transparent base was selected to permit imaging from below, while a modular aluminium trolley with a top clear acrylic tier was proposed to support the opposing cameras. Since even small changes in camera positioning may affect image focus and repeatability, mounting stability was identified as an important design consideration alongside optical resolution and field of view.
+
+## 2.3 Software Design Requirements
+
+Given these contextual considerations, the following design specifications were established as target objectives for addressing the identified use cases and pain points. In lieu of a Singapore precedent, numeric targets were informed by the FDA-cleared IDx-DR autonomous AI system, which evaluates ophthalmic images for diabetic-retinopathy screening and reported 87.2% sensitivity and 90.7% specificity (Abràmoff et al., 2018). However, since the proposed system screens surgical instruments as opposed to producing diagnoses, the project establishes stricter ideal-case performance targets than the IDx-DR benchmark.
+
+## 2.4 Performance Specifications and Acceptance Criteria
+
+The resulting design specifications are presented in Table 2, together with their proposed verification methods. Numerical targets were established to guide prototype evaluation, with particular emphasis on minimising false negatives and maintaining practical inspection times. These specifications represent the team's intended performance criteria rather than confirmed achievements, providing a basis for identifying limitations and planning further verification in Semester 2.
+
+| **Design requirement** | **Target** | **Engineering rationale** | **Verification method** |
+|:---|:---|:---|:---|
+| **Inspection time** | ≤60 s per tray | Reduce processing time compared with the current 1–2-minute manual inspection. | Measure total time from image capture to displayed results. |
+| **Defect detection** | FNR ≤5% | Prioritise minimising missed defects due to potential patient-safety consequences. | Evaluate against labelled defective instruments. |
+| **Instrument counting** | ≥95% accuracy | Support reliable verification of instrument presence during tray preparation. | Compare predicted counts with actual tray contents. |
+| **Wet-condition performance** | Sensitivity ≥90%; FNR ≤10% | Assess performance when moisture and reflections affect instrument visibility. | Evaluate using a separate wet-image test set. |
+| **Human verification** | All positive and uncertain cases reviewed | Retain clinical judgement for potentially defective instruments. | Verify that flagged results require user review. |
+| **Camera-arm stability** | To be established in Semester 2 | Minimise camera movement that could affect image consistency and focus. | Measure and calculate loaded displacement. |
+| **Optical resolution** | Smallest relevant defect must be distinguishable | Ensure sufficient image detail for detecting fine instrument damage. | Calibrate field of view and measure image sampling. |
+
+<p align="center"><em>Table 2. Acceptance Criteria</em></p>
