@@ -326,3 +326,30 @@ Nevertheless, the KEYENCE camera remains the proposed imaging device for the int
   <br>
   <em>Figure 6. KEYENCE VS-L160CX camera.</em>
 </p>
+
+### 3.2.1 Proposed KEYENCE Camera Configuration
+
+The inherited KEYENCE VS-L160CX camera (Figure 6) was retained for the proposed inspection system because its integrated zoom lens and adjustable imaging settings allow controlled image acquisition within the fixed trolley configuration, while maintaining continuity with the previous MEDetect project.
+
+### 3.2.2 Comparative Optical Resolution Analysis
+
+As ophthalmic instruments have fine tips measuring approximately 0.18–0.42 mm, the imaging configuration must provide sufficient detail for defect assessment. While the KEYENCE VS-L160CX has a lower pixel count (1.6 MP) than the iPhone 15 used for preliminary data collection (KEYENCE Corporation, n.d.), the team recognised that image detail also depends on the field of view (FOV). A smaller FOV allows an instrument feature to occupy more pixels, although it reduces the area captured in a single image.
+
+To assess this relationship, a preliminary spatial-sampling calculation was performed using the horizontal FOV (*W*) and image width (*N*):
+
+<p align="center">
+  <strong>s = W / N</strong>
+</p>
+
+Where:
+
+- **s** = spatial sampling (mm/pixel)
+- **W** = horizontal field of view (mm)
+- **N** = horizontal image resolution (pixels)
+
+Assuming both cameras capture the full 277 mm tray width, the KEYENCE provides an estimated 0.1924 mm/pixel, compared with 0.03435 mm/pixel for an illustrative 48 MP iPhone image. These calculations highlight the need to balance tray coverage with fine-feature visibility when determining the final imaging configuration. The estimates will be verified through optical calibration using the KEYENCE camera in Semester 2.
+
+| **Imaging configuration** | **Horizontal pixels** | **Assumed FOV** | **Spatial sampling** |
+|:---|---:|---:|---:|
+| KEYENCE VS-L160CX (1.6 MP) | 1,440 | 277 mm | 0.1924 mm/pixel |
+| iPhone 15 (illustrative 48 MP mode) | 8,064 | 277 mm | 0.03435 mm/pixel |
