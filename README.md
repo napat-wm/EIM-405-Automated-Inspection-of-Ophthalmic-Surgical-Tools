@@ -193,7 +193,9 @@ The inspection of ophthalmic surgical instruments at the Singapore National Eye 
 
 ## 1.2 Problem Statement and Engineering Need
 
-e
+The problem is not merely to classify a photographed instrument. A usable clinical aid must first acquire repeatable images, locate the relevant tool, expose its critical surfaces and then recognise defects without allowing missed localisation to silently conceal a damaged instrument. Manual counting and inspection reportedly take around one to two minutes per tray in stakeholder discussions, making workflow compatibility a design constraint. The engineering need is therefore for a constrained imaging geometry, adequate spatial sampling at the tip, reliable tool localisation and defect screening, and a clear escalation route for uncertain cases.
+An automated result should also be treated differently according to its certainty. A detected defect should be highlighted for human inspection, an absent or poorly localised tool should trigger a review request rather than being labelled healthy. This design principle is important because a localisation failure can prevent the defect model from receiving an image at all.
+
 
 ## 1.3 Project Objectives, Scope, and Value
 
