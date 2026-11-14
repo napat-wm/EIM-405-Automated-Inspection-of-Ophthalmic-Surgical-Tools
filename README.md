@@ -183,13 +183,13 @@ e
 This project aims to create a tray-compatible automated inspection aid combining opposing-view imaging with a computer-vision pipeline. Initial algorithmic evaluation focused on the Hook Sinskey (HS) with the chance of future extension including Chop Phaco and Macpherson, and Utrata forceps. The envisioned system counts or localises instruments, evaluates visible damage and flags abnormal or uncertain outcomes for nurse review. It is not intended to replace clinical judgement or independently approve instruments for reuse. The anticipated contribution lies in joining a practical optical-mechanical fixture to defect-focused image analysis rather than improving a model score in isolation.
 
 
-| **Value proposition** | **How the project component delivers it** |
+| **Value proposition** | **Rationale and intended contribution** |
 |:---|:---|
 | **More consistent defect screening** | The same trained models apply to every tray, reducing variation caused by fatigue, workload, and individual judgement. |
 | **Identification of subtle damage** | The model evaluates fine contours, enabling focused analysis of features such as bent, chipped or partially broken tips. |
-| **Better use of skilled nursing time** | Routine first-line visual screening is automated, allowing nurses to focus on flagged cases, clinical judgement, tray preparation and other sterile-processing responsibilities. |
-| **Transparent and auditable decisions** | The output can show tool locations, segmentation masks, predicted defect labels, confidence scores and review flags. |
-| **Robustness for ophthalmic-tool conditions** | XX. |
+| **Better use of skilled nursing time** | Automating repetitive screening and instrument counting is intended to reduce routine inspection demands, allowing nurses to focus on clinical judgement and cases requiring further review. |
+| **Transparent and auditable decisions** | The proposed workflow prioritises interpretable inspection results, including tool identification, defect classifications and confidence information, while retaining human verification of uncertain findings. |
+| **Robustness under realistic inspection conditions** | Since ophthalmic instruments may be wet, reflective or positioned differently during inspection, these conditions are prioritised in prototype evaluation to assess the system's suitability for clinical use. |
 
 <p align="center"><em>Table 1. Value Proposition</em></p>
 
