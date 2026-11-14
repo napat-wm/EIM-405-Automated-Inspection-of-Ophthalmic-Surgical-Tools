@@ -149,6 +149,7 @@ This interim report documents the development, improvement, and preliminary eval
 - [Figure 2. Initial tray concept using a perforated frame and adjustable silicone strings](#figure-2)
 - [Figure 3. Initial elevated open-bottom tray concept](#figure-3)
 - [Figure 4. CAD rendering of the proposed surgical instrument tray](#figure-4)
+- [Figure 5. Final Trolley Assembly](#figure-5).
 
 
 ## List of Tables
@@ -283,7 +284,7 @@ Two cameras are proposed, with one positioned above the tray and the other under
 Photographs of the fabricated trolley and the bill of materials used for fabrication at the NUS Central Workshop are provided in [Appendix C](#appendix-c-trolley-fabrication-and-bill-of-materials).
 
 <p align="center" id="figure-5">
-  <img src="assets/final-trolley.jpeg" width="400" alt="CAD rendering of the three-tier trolley with opposing camera mounts">
+  <img src="assets/final-trolley.jpg" width="400" alt="CAD rendering of the three-tier trolley with opposing camera mounts">
   <br>
   <em>Figure 5. Final Trolley Assembly.</em>
 </p>
