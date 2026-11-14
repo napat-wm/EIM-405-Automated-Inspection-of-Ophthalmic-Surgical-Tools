@@ -288,3 +288,41 @@ Photographs of the fabricated trolley and the bill of materials used for fabrica
   <br>
   <em>Figure 5. Final Trolley Assembly.</em>
 </p>
+
+The current camera-arm design uses a horizontal aluminium extrusion approximately 270 mm long, connected to a vertical support through a right-angle bracket. The proposed mounting plate measures 200 × 100 × 3 mm and uses M6 fasteners. Since camera positioning affects both the field of view and image repeatability, a preliminary static calculation was conducted before physical stability testing.
+
+Using the manufacturer's specified mass of approximately 0.70 kg for the KEYENCE VS-L160CX camera ([KEYENCE Corporation, n.d.](https://www.keyence.com.sg/products/vision/vision-sys/vs/models/vs-l160cx/)), an aluminium plate density of 2,700 kg/m³ and the nominal plate dimensions, the estimated plate mass is:
+
+**Plate mass:**
+
+m = ρV = 2,700 × (0.200 × 0.100 × 0.003) = **0.162 kg**
+
+**Combined gravitational load:**
+
+F = (0.700 + 0.162) × 9.81 = **8.46 N**
+
+**Estimated bending moment at the arm joint:**
+
+M = FL = 8.46 × 0.270 = **2.28 N·m**
+
+If the arm is idealised as a fully fixed cantilever, with an assumed aluminium Young's modulus of E = 69 GPa and an illustrative profile second moment of area of I = 3.0 × 10⁻⁸ m⁴, the beam-tip deflection is estimated using:
+
+**δ = FL³ / (3EI)**
+
+δ = [8.46 × (0.270)³] / [3 × (69 × 10⁹) × (3.0 × 10⁻⁸)]
+
+**δ ≈ 0.0268 mm**
+
+This preliminary estimate assumes a fully fixed connection and an equivalent point load at the end of the arm. It does not account for bracket flexibility, joint compliance or differences in component centres of mass. Semester 2 verification will therefore measure camera-arm displacement and image repeatability under load, using the idealised aluminium-beam calculation as a reference.
+
+## 3.2 Imaging System Design and Feasibility
+
+Although the inherited MEDetect system used a KEYENCE VS-L160CX camera, the team selected the iPhone 15 for preliminary image acquisition because it allowed greater flexibility in collecting training images under different lighting, instrument-placement and wet–dry conditions without requiring a completed mechanical setup, as the physical setup was still under construction.
+
+Nevertheless, the KEYENCE camera remains the proposed imaging device for the integrated system (Figure 6). Unlike the smartphone, it is an industrial machine-vision camera designed for controlled inspection applications. Although its nominal pixel count is lower than that of the iPhone 15, its industrial imaging capabilities and compatibility with a fixed inspection setup make it a suitable candidate for further evaluation.
+
+<p align="center" id="figure-6">
+  <img src="assets/keyence-vs-l160cx.jpeg" width="350" alt="KEYENCE VS-L160CX industrial machine-vision camera">
+  <br>
+  <em>Figure 6. KEYENCE VS-L160CX camera.</em>
+</p>
