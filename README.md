@@ -322,7 +322,7 @@ Although the inherited MEDetect system used a KEYENCE VS-L160CX camera, the team
 Nevertheless, the KEYENCE camera remains the proposed imaging device for the integrated system (Figure 6). Unlike the smartphone, it is an industrial machine-vision camera designed for controlled inspection applications. Although its nominal pixel count is lower than that of the iPhone 15, its industrial imaging capabilities and compatibility with a fixed inspection setup make it a suitable candidate for further evaluation.
 
 <p align="center" id="figure-6">
-  <img src="assets/keyence-vs-l160cx.jpeg" width="350" alt="KEYENCE VS-L160CX industrial machine-vision camera">
+  <img src="assets/keyence-vs-l160cx.jpg" width="350" alt="KEYENCE VS-L160CX industrial machine-vision camera">
   <br>
   <em>Figure 6. KEYENCE VS-L160CX camera.</em>
 </p>
