@@ -356,6 +356,74 @@ Assuming both cameras capture the full 277 mm tray width, the KEYENCE provides a
 
 ## 3.3 Machine-Learning Prototype Development
 
+Due to the manpower limitations of a two-person team, this project focused on one target instrument: the **Hook Sinskey (HS)**. This allowed the team to collect, annotate, train and evaluate a sufficiently controlled dataset instead of attempting to develop shallow models for all tool types.
+
+Hook Sinskey (HS) was selected as the initial pilot tool because the inherited YOLO defect-detection model achieved an mAP50–95 (mean Average Precision) of 57.1%. This metric measures how closely predicted bounding boxes overlap the ground-truth defect regions across ten increasingly strict thresholds, from 0.50 to 0.95. The result indicated moderate performance: the model was neither close to saturation, where further improvement would be difficult to demonstrate, nor so weak that performance differences could primarily reflect poor data quality or unreliable labels.
+
+### 3.3.1 ML Architectures, Detection and Segmentation Paradigms
+
+Two alternative architectures with potential to perform better on surgical-tool defect detection were explored. The first is DETR, an architecture using transformer encodings capable of performing object detection and instance segmentation. The second is Mask R-CNN, a two-stage instance-segmentation model. These models were considered because prior studies show that both can perform well on medical imaging tasks. For instance, DETR achieved 97% sensitivity for lesion detection in a multicentre liver-ultrasound study (Dadoun, 2022), while Mask R-CNN scored above 93% in detecting post-trabeculectomy blebs (Wang et al., 2020).
+
+These models comprise two detection paradigms which were tested to identify an optimal model performance balancing both inference speed and prediction accuracy. The first is detection, which predicts a bounding box around an image component and assigns a label, such as defective or non-defective. This generally provides faster inference time but may not explicitly capture fine contours, tool-tip geometry or the exact location of a defect. The second is segmentation, which predicts a pixel-level mask for each object, capturing precise tool boundaries but generally comes with higher computational costs and inference times.
+
+Four prototypes were therefore developed:
+
+| **Prototype** | **Model** | **Output paradigm** |
+|:---|:---|:---|
+| Prototype 0 | YOLO defect detection | Bounding-box detection |
+| Prototype 1 | DETR detection | Bounding-box detection |
+| Prototype 2 | DETR segmentation | Pixel-level instance segmentation |
+| Prototype 3 | Mask R-CNN | Pixel-level instance segmentation |
+
+### 3.3.2 Training Procedure and Dataset Preparation
+
+To train the model prototypes to predict defect conditions, a dataset containing images of both defective and non-defective instruments was collected. Images were acquired using an iPhone 15 with a 48-megapixel camera under varied instrument-placement and wet–dry conditions to facilitate rapid proof-of-concept development.
+
+To simulate wet conditions, both the instrument and tray surfaces were sprayed with water to represent post-operation and post-washing conditions. For lighting, room blinds were closed and LED illumination was used to simulate hospital lighting conditions, using artificial rather than natural light. The resulting dataset contained both defective and non-defective Hook Sinskey samples, as illustrated in Figures 7 and 8.
+
+<p align="center" id="figure-7">
+  <img src="assets/defective-sample.jpeg" width="550" alt="Defective Hook Sinskey instrument sample">
+  <br>
+  <em>Figure 7. Defective Hook Sinskey sample.</em>
+</p>
+
+<p align="center" id="figure-8">
+  <img src="assets/non-defective-sample.jpeg" width="550" alt="Non-defective Hook Sinskey instrument sample">
+  <br>
+  <em>Figure 8. Non-defective Hook Sinskey sample.</em>
+</p>
+
+Subsequently, images were manually labelled according to their relevant classes. Detection models used defect bounding-box annotations, while segmentation models used corresponding pixel-level masks.
+
+After manual labelling was completed, the dataset was divided into training, validation and test sets. A larger training portion allowed the models to learn defect patterns, while the validation and test sets were retained for model tuning and unbiased performance evaluation. The approximate split was 70% training, 20% validation and 10% testing.
+
+| **Split** | **Original images** | **Augmented images** | **Total files** | **Defective** | **Healthy** |
+|:---|---:|---:|---:|---:|---:|
+| Training | 161 | 161 | **322** | 216 | 106 |
+| Validation | 41 | 0 | 41 | 30 | 11 |
+| Test | 24 | 0 | 24 | 16 | 8 |
+
+To improve generalisation without contaminating the evaluation data, augmentation was applied only to the training set, following a 50:50 original-to-augmented policy. The augmentation methods and their corresponding settings are presented below, with representative examples shown in Figure 9.
+
+| **Augmentation** | **Setting** |
+|:---|:---|
+| Horizontal flip | 50% probability |
+| Rotation | Up to ±10° |
+| Brightness adjustment | ±15% |
+| Contrast adjustment | ±15% |
+| Gaussian blur | 10% probability |
+| Sharpening | 10% probability |
+| Gaussian noise | 15% probability; σ = 0.015 |
+| Salt-and-pepper noise | 5% probability; 0.2% of pixels |
+
+<p align="center" id="figure-9">
+  <img src="assets/data-augmentation.jpeg" width="650" alt="Examples of image augmentation applied to Hook Sinskey training images">
+  <br>
+  <em>Figure 9. Representative image augmentation techniques applied to the training dataset.</em>
+</p>
+
+
+  
 ---
 
 # 4 Discussion, Limitations and Semester 2 Plan
@@ -373,3 +441,13 @@ Furthermore, the ML models were trained and evaluated using iPhone 15 images, me
 Semester 2 will focus on integrating the mechanical and imaging components into a functional inspection system. The KEYENCE cameras will first be installed on the fabricated trolley, followed by mechanical stability testing and optical verification through the acrylic tray. Once consistent imaging conditions have been established, additional Hook Sinskey images will be collected to support model retraining and validation.
 
 User-interface development will proceed alongside detection system refinement before the components are integrated for end-to-end testing. Final verification will assess the system against the proposed design specifications, including defect detection, instrument counting and inspection time. The proposed development timeline is presented in [Appendix D](#appendix-d-semester-2-development-gantt-chart).
+
+---
+
+---
+
+# 5 Conclusion
+
+The Semester 1 development established a foundation for an automated ophthalmic surgical-instrument inspection system through both **mechanical design and machine-learning development**. By evaluating alternative tray concepts, the team developed a transparent-base tray and three-tier trolley configuration intended to support two-sided inspection with minimal instrument handling. Preliminary engineering calculations also provided further considerations for camera positioning and imaging requirements, and comparative ML testing identified Mask R-CNN as the preferred model for the initial Hook Sinskey application.
+
+Together, these developments demonstrate progress towards integrating image acquisition with the physical setup and automated defect assessment into a single inspection workflow, providing a basis for continued system development in Semester 2.
