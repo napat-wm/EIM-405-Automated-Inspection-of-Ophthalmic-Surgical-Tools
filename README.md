@@ -66,8 +66,10 @@
 <br><br>
 
 Biomedical Engineering
+: Mechanical Components
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-XX Engineering
+Industrial and Systems Engineering Engineering
+: Machine-Learning Components
 
 </div>
 ---
@@ -127,12 +129,12 @@ This interim report documents the development, improvement, and preliminary eval
 
 **4. Discussion, Limitations and Semester 2 Plan**
 
-- [4.1 Interpretation and Limitations](#51-interpretation-and-limitations)
-- [4.2 Prioritised Semester 2 Milestones](#52-prioritised-semester-2-milestones)
+- [4.1 Interpretation and Limitations](#41-interpretation-and-limitations)
+- [4.2 Development and Verification Plan](#42-development-and-verification-plan)
 
 **5. Conclusion**
 
-- [Conclusion](#6-conclusion)
+- [Conclusion](#5-conclusion)
 
 **References and Appendices**
 
@@ -141,6 +143,7 @@ This interim report documents the development, improvement, and preliminary eval
 - [Appendix B: Final Tray Design](#appendix-b-final-tray-design)
 - [Appendix C: Trolley Prototyping](#appendix-c-trolley-prototyping)
 - [Appendix D: Semester 2 Development Gantt Chart](#appendix-d-semester-2-development-gantt-chart)
+- [Appendix E: ML Workspace and documented progress](#appendix-ml-workspace-and-documented-progress)
 
 ---
 ## List of Figures
@@ -150,10 +153,15 @@ This interim report documents the development, improvement, and preliminary eval
 - [Figure 3. Initial elevated open-bottom tray concept](#figure-3)
 - [Figure 4. CAD rendering of the proposed surgical instrument tray](#figure-4)
 - [Figure 5. Final Trolley Assembly](#figure-5).
+- [Figure 6. KEYENCE Industrial Camera](#figure-6).
+- [Figure 7. Defective Hook Sinskey sample](#figure-7).
+- [Figure 8. Non-defective Hook Sinskey sample](#figure-8).
+- [Figure 9. Representative image augmentation techniques applied to the training dataset](#figure-9).
 
 
 ## List of Tables
-XX
+- [Table 1. Value Propoition](#table-1)
+- [Table 2. Acceptance Criteria](#table-2)
 
 ---
 
