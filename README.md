@@ -49,29 +49,34 @@
 ---
 <h2 align="center">Project Team</h2>
 
-<br>
-
-<div align="center">
-
-<img src="assets/napat.png" width="150" height="150" alt="Napatsawan Wongmuang">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="assets/christoph.png" width="150" height="150" alt="Christoph Franz Czuan">
-
-<br><br>
-
-<b>Napatsawan Wongmuang</b>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<b>Christoph Franz Czuan</b>
-
-<br><br>
-
-Biomedical Engineering
-: Mechanical Components
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Industrial and Systems Engineering Engineering
-: Machine-Learning Components
-
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/napat.png" width="150" height="150" alt="Napatsawan Wongmuang">
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/his.png" width="150" height="150" alt="Christoph Franz Czuan">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Napatsawan Wongmuang</strong>
+    </td>
+    <td align="center">
+      <strong>Christoph Franz Czuan</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      Biomedical Engineering:<br>
+      Mechanical Components
+    </td>
+    <td align="center">
+      Industrial and Systems Engineering:<br>
+      Machine-Learning Components
+    </td>
+  </tr>
+</table>
 ---
 
 ---
@@ -517,6 +522,7 @@ The current prototype development focused exclusively on Hook Sinskey instrument
 **Proposed Solutions:**
 - Extend dataset collection and model development sequentially to the remaining target instruments.
 - Apply the same controlled workflow for baseline image collection, annotation, training, reviewed-crop testing, end-to-end evaluation and wet-condition robustness testing.
+
 ---
 
 ---
