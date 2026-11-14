@@ -23,12 +23,12 @@
 <th>Student No.</th>
 </tr>
 <tr>
-<td>Christoph Franz Cuan</td>
-<td>A0288302E</td>
-</tr>
-<tr>
 <td>Wongmuang Napatsawan</td>
 <td>A0287748E</td>
+</tr>
+<tr>
+<td>Christoph Franz Cuan</td>
+<td>A0288302E</td>
 </tr>
 </table>
 
@@ -64,12 +64,75 @@ XX Engineering
 </div>
 ---
 
-# Table of Contents
+---
 
-*Report sections will be added here.*
+# Acknowledgment 
+We would like to express our sincere gratitude to our supervisor, Mr. Nicholas Chew, for his guidance, constructive feedback, and continued support through the semester. We also extend our appreciation to the Singapore National Eye Centre (SNEC) and the staff for facilitating our hospital visit and providing valuable insights into the clinical workflow and challenges associated with ophthalmic surgical instrument inspection. Finally, we would like to thank the NUS IDP Hub and Centralised Workshop for their technical assistance, facilities and support in the fabrication and production of our prototype components.
 
 ---
 
-# 1. Introduction
+# Abstract
+XX
 
-*Content to be added.*
+---
+
+# Table of Contents
+
+**Preliminary Sections**
+
+- [Abstract](#abstract)
+- [List of Figures](#list-of-figures)
+- [List of Tables](#list-of-tables)
+- [Acronyms](#acronyms)
+
+**1. Introduction**
+
+- [1.1 Clinical Context and Current Inspection Workflow](#11-clinical-context-and-current-inspection-workflow)
+- [1.2 Problem Statement and Engineering Need](#12-problem-statement-and-engineering-need)
+- [1.4 Project Objectives, Scope, and Value](#14-project-objectives-scope-and-value)
+
+**2. System Requirements and Design Specifications**
+
+- [2.1 Proposed System Overview](#21-proposed-system-overview)
+- [2.2 Hardware Design Requirements](#22-hardware-design-requirements)
+- [2.3 Software Design Requirements](#23-software-design-requirements)
+- [2.4 Performance Specifications and Acceptance Criteria](#24-performance-specifications-and-acceptance-criteria)
+
+**3. System Design and Prototype Development**
+
+- [3.1 Mechanical Design Development](#31-mechanical-design-development)
+  - [3.1.1 Initial Concepts and Evaluation](#311-initial-concepts-and-evaluation)
+  - [3.1.2 Selected Design](#312-selected-design)
+    - [3.1.2.1 Final Tray Design](#3121-final-tray-design)
+    - [3.1.2.2 Three-Tier Trolley Design and Camera Arm](#3122-three-tier-trolley-design-and-camera-arm)
+
+- [3.2 Imaging System Design and Feasibility](#32-imaging-system-design-and-feasibility)
+  - [3.2.1 Proposed Keyence Camera Configuration](#321-proposed-keyence-camera-configuration)
+  - [3.2.2 Comparative Optical Resolution Analysis](#322-comparative-optical-resolution-analysis)
+
+- [3.3 Machine-Learning Prototype Development](#33-machine-learning-prototype-development)
+  - [3.3.1 ML Architectures, Detection and Segmentation Paradigms](#331-ml-architectures-detection-and-segmentation-paradigms)
+  - [3.3.2 Training Procedure and Dataset Preparation](#332-training-procedure-and-dataset-preparation)
+  - [3.3.3 Prototype Testing and Performance Evaluation](#333-prototype-testing-and-performance-evaluation)
+  - [3.3.4 Prototype Selection and Analysis](#334-prototype-selection-and-analysis)
+
+**5. Discussion, Limitations and Semester 2 Plan**
+
+- [5.1 Interpretation and Limitations](#51-interpretation-and-limitations)
+- [5.2 Prioritised Semester 2 Milestones](#52-prioritised-semester-2-milestones)
+
+**6. Conclusion**
+
+- [Conclusion](#6-conclusion)
+
+**References and Appendices**
+
+- [References](#references)
+- [Appendix A: Mechanical Design Drawings](#appendix-a-mechanical-design-drawings)
+- [Appendix B: Interactive CAD Models](#appendix-b-interactive-cad-models)
+- [Appendix C: Bill of Material from NUS Central Workshop](#appendix-c-bill-of-material-from-nus-central-workshop)
+- [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
+
+---
+
+
