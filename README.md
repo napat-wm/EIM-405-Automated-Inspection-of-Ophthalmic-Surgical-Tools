@@ -8,7 +8,10 @@
 
 <br>
 
-<h3>National University of Singapore</h3>
+
+<img src="assets/nus-logo.png" width="400" alt="National University of Singapore">
+
+<br>
 
 <p>Project EIM-405: Automated Inspection of Ophthalmic Surgical Tools</p>
 
@@ -37,10 +40,35 @@
 
 ---
 
-# Project Team
+<h2 align="center">Project Team</h2>
 
-*Team portraits will be added here.*
+<table align="center">
+<tr>
 
+<td align="center" width="250" valign="top">
+
+<img src="assets/napat.png" width="140" alt="Napatsawan Wongmuang">
+
+<br>
+<b>Napatsawan Wongmuang</b>
+<br>
+Biomedical Engineering
+
+</td>
+
+<td align="center" width="250" valign="top">
+
+<img src="assets/christoph.jpeg" width="140" alt="Christoph Franz Czuan">
+
+<br>
+<b>Christoph Franz Czuan</b>
+<br>
+Biomedical Engineering
+
+</td>
+
+</tr>
+</table>
 ---
 
 # Table of Contents
