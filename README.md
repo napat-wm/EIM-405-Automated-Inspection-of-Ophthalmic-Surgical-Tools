@@ -90,7 +90,7 @@ This interim report documents the development, improvement, and preliminary eval
 
 - [1.1 Clinical Context and Current Inspection Workflow](#11-clinical-context-and-current-inspection-workflow)
 - [1.2 Problem Statement and Engineering Need](#12-problem-statement-and-engineering-need)
-- [1.4 Project Objectives, Scope, and Value](#14-project-objectives-scope-and-value)
+- [1.3 Project Objectives, Scope, and Value](#13-project-objectives-scope-and-value)
 
 **2. System Requirements and Design Specifications**
 
@@ -164,8 +164,25 @@ Table 1. xx []
 
 ## 1.1 Clinical Context and Current Inspection Workflow
 
-The inspection 
+The inspection of ophthalmic surgical instruments at the Singapore National Eye Centre (SNEC) remains largely manual, requiring nurses to examine tools at multiple stages before and after surgery and during reprocessing. With over 21,000 cataract procedures annually at the SNEC (SNEC, n.d.) and approximately four inspection checkpoints per procedure or an estimated 84,000 inspections are performed each year. Although tray inspection and counting typically take only one to two minutes, these repetitive tasks add to nurses’ workload and may contribute to inconsistent assessments due to fatigue, varying lighting conditions and subjective judgement. Furthermore, preliminary measurements conducted by the previous MEDetect project team under a microscope identified ophthalmic instrument tip dimensions ranging from approximately 0.18 to 0.42 mm, highlighting the difficulty of identifying subtle defects such as bending, chipping and micro-fractures. These challenges are supported by studies reporting residual debris in nearly two-thirds of reprocessed ophthalmic surgical trays (Dinakaran & Kayarkar, 2002) and foreign material or structural abnormalities in over half of examined ophthalmic handpieces (Zhan et al., 2025). Together, these findings highlight the need for a more consistent and efficient inspection system that supports clinical staff without replacing their professional judgement.
 
 ## 1.2 Problem Statement and Engineering Need
 
-The problem 
+e
+
+## 1.3 Problem Objectives, Scope, and Value
+
+This project aims to create a tray-compatible automated inspection aid combining opposing-view imaging with a computer-vision pipeline. Initial algorithmic evaluation focused on the Hook Sinskey (HS) with the chance of future extension including Chop Phaco and Macpherson, and Utrata forceps. The envisioned system counts or localises instruments, evaluates visible damage and flags abnormal or uncertain outcomes for nurse review. It is not intended to replace clinical judgement or independently approve instruments for reuse. The anticipated contribution lies in joining a practical optical-mechanical fixture to defect-focused image analysis rather than improving a model score in isolation.
+
+
+| **Value proposition** | **How the project component delivers it** |
+|:---|:---|
+| **More consistent defect screening** | The same trained models apply to every tray, reducing variation caused by fatigue, workload, and individual judgement. |
+| **Identification of subtle damage** | The model evaluates fine contours, enabling focused analysis of features such as bent, chipped or partially broken tips. |
+| **Better use of skilled nursing time** | Routine first-line visual screening is automated, allowing nurses to focus on flagged cases, clinical judgement, tray preparation and other sterile-processing responsibilities. |
+| **Transparent and auditable decisions** | The output can show tool locations, segmentation masks, predicted defect labels, confidence scores and review flags. |
+| **Robustness for ophthalmic-tool conditions** | XX. |
+
+<p align="center"><em>Table 1. Value Proposition</em></p>
+
+
