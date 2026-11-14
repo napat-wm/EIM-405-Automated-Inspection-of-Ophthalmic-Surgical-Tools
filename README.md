@@ -39,36 +39,29 @@
 <br>
 
 ---
-
 <h2 align="center">Project Team</h2>
 
-<table align="center">
-<tr>
-
-<td align="center" width="250" valign="top">
-
-<img src="assets/napat.png" width="140" alt="Napatsawan Wongmuang">
-
 <br>
+
+<div align="center">
+
+<img src="assets/napat.png" width="150" height="150" alt="Napatsawan Wongmuang">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="assets/christoph.png" width="150" height="150" alt="Christoph Franz Czuan">
+
+<br><br>
+
 <b>Napatsawan Wongmuang</b>
-<br>
-Biomedical Engineering
-
-</td>
-
-<td align="center" width="250" valign="top">
-
-<img src="assets/christoph.jpeg" width="140" alt="Christoph Franz Czuan">
-
-<br>
+&nbsp;&nbsp;&nbsp;&nbsp;
 <b>Christoph Franz Czuan</b>
-<br>
+
+<br><br>
+
 Biomedical Engineering
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+XX Engineering
 
-</td>
-
-</tr>
-</table>
+</div>
 ---
 
 # Table of Contents
