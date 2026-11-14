@@ -269,7 +269,7 @@ The existing SNEC tray was measured at approximately 277 mm × 177 mm in externa
 The final component fit, surface quality and any optical distortion caused by the acrylic still require further assessment for clinical compliance, as the design is intended for proof-of-concept testing and has not been established as suitable for sterile clinical use.
 
 <p align="center" id="figure-4">
-  <img src="assets/final-tray.jpeg" width="500" alt="CAD rendering of the proposed transparent-base surgical instrument tray">
+  <img src="assets/final-tray.jpg" width="500" alt="CAD rendering of the proposed transparent-base surgical instrument tray">
   <br>
   <em>Figure 4. CAD rendering of the proposed surgical instrument tray with a transparent acrylic base and 3D-printed surrounding walls.</em>
 </p>
