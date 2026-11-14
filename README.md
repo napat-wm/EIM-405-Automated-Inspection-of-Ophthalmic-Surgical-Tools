@@ -138,7 +138,7 @@ This interim report documents the development, improvement, and preliminary eval
 
 - [References](#references)
 - [Appendix A: Existing Surgical Tray](#appendix-a-existing-surgical-tray)
-- [Appendix B: Interactive CAD Models](#appendix-b-interactive-cad-models)
+- [Appendix B: Final Tray Design](#appendix-b-final-tray-design)
 - [Appendix C: Bill of Material from NUS Central Workshop](#appendix-c-bill-of-material-from-nus-central-workshop)
 - [Appendix D: Gantt Chart for Semester 2](#appendix-d-gantt-chart-for-semester-2)
 
@@ -148,6 +148,7 @@ This interim report documents the development, improvement, and preliminary eval
 - [Figure 1. Initial tray concept using suspended silicone strips](#figure-1)
 - [Figure 2. Initial tray concept using a perforated frame and adjustable silicone strings](#figure-2)
 - [Figure 3. Initial elevated open-bottom tray concept](#figure-3)
+- [Figure 4. CAD rendering of the proposed surgical instrument tray](#figure-4)
 
 
 ## List of Tables
@@ -257,4 +258,18 @@ To address this limitation, the third concept (Figure 3) introduced an elevated,
   <img src="assets/concept-3.jpeg" width="500" alt="Concept 3">
   <br>
   <em>Figure 3. Initial elevated open-bottom tray/chair concept.</em>
+</p>
+
+### 3.1.2 Selected Design
+
+#### 3.1.2.1 Final Tray Design
+
+The existing SNEC tray was measured at approximately 277 mm × 177 mm in external footprint and 37 mm in height. The proposed tray follows these overall dimensions, using a laser-cut acrylic base and 3D-printed surrounding walls as illustrated in Figure 4. The acrylic is intended to permit imaging from below, while printing the walls makes it easier to modify the frame during prototyping. CAD drawings of the components and photographs of the fabricated tray are provided in [Appendix B](#appendix-b-final-tray-design).
+
+The final component fit, surface quality and any optical distortion caused by the acrylic still require further assessment for clinical compliance, as the design is intended for proof-of-concept testing and has not been established as suitable for sterile clinical use.
+
+<p align="center" id="figure-4">
+  <img src="assets/final-tray.jpeg" width="500" alt="CAD rendering of the proposed transparent-base surgical instrument tray">
+  <br>
+  <em>Figure 4. CAD rendering of the proposed surgical instrument tray with a transparent acrylic base and 3D-printed surrounding walls.</em>
 </p>
